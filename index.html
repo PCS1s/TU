@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Received - Thank You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Reusing the same animated background for brand consistency */
+        body {
+            background: linear-gradient(-45deg, #1a237e, #3f51b5, #009688, #283593);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Glassmorphism effect for the container */
+        .content-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* Button styles */
+        .cta-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cta-button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg rounded-xl shadow-2xl text-center p-8 sm:p-12 content-container">
+        
+        <!-- Success Icon -->
+        <div class="mx-auto mb-6 w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+
+        <!-- Message Content -->
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">Thank You!</h1>
+        <p class="text-gray-600 mb-6 text-lg">
+            Your complaint has been successfully submitted. We have received your information and will begin our review process shortly.
+        </p>
+        <p class="text-gray-600 mb-8">
+            You should receive a confirmation email within the next few minutes. If you have any urgent questions, please contact our support team.
+        </p>
+        
+        <!-- Call-to-Action Link -->
+        <div class="mt-8">
+            <a href="https://pcs1s.github.io/PrivateCybersecurityServices/"  <!-- Important: Replace this URL with your actual desired link -->
+              HOME
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
